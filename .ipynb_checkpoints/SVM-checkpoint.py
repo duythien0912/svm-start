@@ -7,7 +7,7 @@ style.use("ggplot")
 
 def Build_Data_Set(features = ["DE Ratio",
                                "Trailing P/E"]):
-    data_df = pd.DataFrame.from_csv("key_stats.csv")
+    data_df = pd.read_csv("key_stats.csv")
 
     data_df = data_df[:100]
 
